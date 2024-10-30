@@ -1,0 +1,446 @@
+# Copyright (C) 2021 Rouergue Creation
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Custom Event Tickets 2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-event/ntickets\n"
+"POT-Creation-Date: 2021-03-15 15:48+0100\n"
+"PO-Revision-Date: 2024-01-03 17:49+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: inc/admin-menu.php:22
+msgid "Easy Custom Event Tickets Settings"
+msgstr "Paramètres Easy Custom Event Tickets"
+
+#: inc/admin-menu.php:23
+msgid "ECET Settings"
+msgstr "ECET Réglages"
+
+#: inc/admin-menu.php:69
+msgid "SUMMARY"
+msgstr "SOMMAIRE"
+
+#: inc/admin-menu.php:81
+msgid "Save Settings"
+msgstr "Enregistrer les paramètres"
+
+#: inc/multiple-settings.php:41 inc/admin-menu.php:71
+msgid "Default settings"
+msgstr "Paramètres par défaut"
+
+#: inc/multiple-settings.php:50
+msgid "initialize the plugin with default settings"
+msgstr "initialiser le plugin avec les paramètres par défaut"
+
+#: inc/multiple-settings.php:59
+msgid "delete data during uninstallation?"
+msgstr "supprimer les données lors de la désinstallation?"
+
+#: inc/multiple-settings.php:72 inc/multiple-settings.php:81
+#: inc/admin-menu.php:73
+msgid "Select your extension version"
+msgstr "Sélectionner la version de votre extension"
+
+#: inc/multiple-settings.php:95 inc/admin-menu.php:75
+msgid "Participants table"
+msgstr "Table des participants"
+
+#: inc/multiple-settings.php:140
+msgid "Enable participants table"
+msgstr "Activer la table des participants"
+
+#: inc/multiple-settings.php:150
+msgid "Table title"
+msgstr "Titre de la table"
+
+#: inc/multiple-settings.php:115
+msgid "HTML title tag"
+msgstr "Balise HTML du titre"
+
+#: inc/multiple-settings.php:121
+msgid "h2"
+msgstr "h2"
+
+#: inc/multiple-settings.php:122
+msgid "h3"
+msgstr "h3"
+
+#: inc/multiple-settings.php:123
+msgid "h4"
+msgstr "h4"
+
+#: inc/multiple-settings.php:124
+msgid "h5"
+msgstr "h5"
+
+#: inc/multiple-settings.php:125
+msgid "p"
+msgstr "p"
+
+#: inc/multiple-settings.php:134
+msgid "select the number of columns"
+msgstr "sélectionnez le nombre de colonnes"
+
+#: inc/multiple-settings.php:201
+msgid "Enable custom format for attendee name"
+msgstr "Activer le format personnalisé pour le nom des participants"
+
+#: inc/multiple-settings.php:212
+msgid "Enable responsive table"
+msgstr "Activer table responsive"
+
+#: inc/multiple-settings.php:140 inc/multiple-settings.php:184
+msgid "3"
+msgstr "3"
+
+#: inc/multiple-settings.php:141 inc/multiple-settings.php:185
+msgid "4"
+msgstr "4"
+
+#: inc/multiple-settings.php:142
+msgid "5"
+msgstr "5"
+
+#: inc/multiple-settings.php:143
+msgid "6"
+msgstr "6"
+
+#: inc/multiple-settings.php:144
+msgid "7"
+msgstr "7"
+
+#: inc/multiple-settings.php:145
+msgid "8"
+msgstr "8"
+
+#: inc/multiple-settings.php:157 inc/admin-menu.php:77
+msgid "Participants table style"
+msgstr "Style table des participants"
+
+#: inc/multiple-settings.php:166
+msgid "even line background color"
+msgstr "couleur d'arrière plan ligne paire"
+
+#: inc/multiple-settings.php:176
+msgid "border thickness in pixel"
+msgstr "épaisseur de la bordure en pixel"
+
+#: inc/multiple-settings.php:182
+msgid "1"
+msgstr "1"
+
+#: inc/multiple-settings.php:183
+msgid "2"
+msgstr "2"
+
+#: inc/multiple-settings.php:194
+msgid "color border"
+msgstr "couleur bordure"
+
+#: inc/multiple-settings.php:204
+msgid "font size in pixel"
+msgstr "taille police en pixel"
+
+#: inc/multiple-settings.php:210
+msgid "15"
+msgstr "15"
+
+#: inc/multiple-settings.php:211
+msgid "16"
+msgstr "16"
+
+#: inc/multiple-settings.php:212
+msgid "17"
+msgstr "17"
+
+#: inc/multiple-settings.php:213
+msgid "18"
+msgstr "18"
+
+#: inc/multiple-settings.php:214
+msgid "19"
+msgstr "19"
+
+#: inc/multiple-settings.php:215
+msgid "20"
+msgstr "20"
+
+#: inc/multiple-settings.php:224
+msgid "font color"
+msgstr "couleur police"
+
+#: inc/multiple-settings.php:237 inc/admin-menu.php:79
+msgid "RSVP Gutenberg block style"
+msgstr "Style du bloc Gutenberg RSVP"
+
+#: inc/multiple-settings.php:246
+msgid "button text"
+msgstr "texte du bouton"
+
+#: inc/multiple-settings.php:256
+msgid "text below number of participants"
+msgstr "texte en dessous du nombre de participants"
+
+#: inc/multiple-settings.php:266
+msgid "text displayed for a closed reservation"
+msgstr "texte affiché pour une réservation fermé"
+
+#: inc/multiple-settings.php:276
+msgid "text displayed in introduction reservation form"
+msgstr "texte affiché en introduction du formulaire de réservation"
+
+#: inc/multiple-settings.php:348 inc/admin-menu.php:81
+msgid "Custom the events calendar list view"
+msgstr "Personnaliser la vue liste du calendrier des évènements"
+
+#: inc/multiple-settings.php:357
+msgid "Enable personalization for list view"
+msgstr "Activer la personnalisation pour la vue liste"
+
+#: inc/multiple-settings.php:299
+msgid "text displayed as a prefix to the number of participants List & Photo view"
+msgstr "texte affiché en préfixe du nombre de participants (vue Liste & Photo)"
+
+#: inc/multiple-settings.php:375
+msgid "text displayed as a prefix of the number of tickets remaining"
+msgstr "texte affiché en préfixe du nombre de billets restants"
+
+#: inc/multiple-settings.php:386 inc/multiple-settings.php:486
+msgid "Add category tag"
+msgstr "Ajouter balise catégorie"
+
+#: inc/multiple-settings.php:359 inc/admin-menu.php:83
+msgid "Custom the pro version events calendar photo view"
+msgstr "Personnalisez la vue photo du calendrier des événements version pro"
+
+#: inc/multiple-settings.php:368
+msgid "Enable custom style for photo view"
+msgstr "Activer style personnalisé pour la vue photo"
+
+#: inc/multiple-settings.php:430
+msgid "Add effect on hover for custom style"
+msgstr "Ajouter un effet au survol pour le style personnalisé"
+
+#: inc/multiple-settings.php:440
+msgid "Moving the event date inside of the photo"
+msgstr "Déplacer la date de l'événement à l'intérieur de la photo"
+
+#: inc/multiple-settings.php:427
+msgid "Add Venue Name and Event City"
+msgstr "Ajouter Nom du lieu & Ville de l'évènement"
+
+#: inc/multiple-settings.php:450
+msgid "Add the number of attendees"
+msgstr "Ajouter le nombre de participants"
+
+#: inc/multiple-settings.php:463 inc/admin-menu.php:85
+msgid "Custom Photo View by Extension:Tribe Ext Alternative Photo View"
+msgstr "Vue Photo personnalisé par extension:Tribe Ext Alternative Photo View"
+
+#: inc/multiple-settings.php:486
+msgid "Have you activated the extension: Tribe Ext Alternative Photo View"
+msgstr "Avez vous activé l'extension: Tribe Ext Alternative Photo View"
+
+#: inc/multiple-settings.php:498 inc/admin-menu.php:87
+msgid "Customize the month view of the calendar of events"
+msgstr "Personnaliser la vue Mois du calendrier des évènements"
+
+#: inc/multiple-settings.php:551
+msgid "enable tooltip customization"
+msgstr "activer personnalisation info-bulle"
+
+#: inc/multiple-settings.php:564
+msgid "Duplicate event"
+msgstr "Dupliquer les évènements"
+
+#: inc/multiple-settings.php:362
+msgid "Select the version of The Events Calendar extension on which the Easy Custom Event Tickets extension is dependent."
+msgstr "Sélectionner la version de l'extension The Events Calendar dont l'extension Easy Custom Event Tickets est dépendante."
+
+#: inc/multiple-settings.php:383
+msgid "You have an option to activate a custom format in order to partially display the Name of the participants provided that the users fill in the Name field of the registration form for an event starting with the First name followed by the Last name, for example:"
+msgstr "Vous avez une option pour  activer un format personnalisé afin d'afficher partiellement le Nom des participants à condition que les utilisateurs renseignent le champ Nom du formulaire d'inscription à un évènement en commençant par le Prénom suivit du Nom soit par exemple:"
+
+#: inc/multiple-settings.php:584
+msgid "Gilles Dupont is replaced by the custom format: Gilles Du."
+msgstr "Gilles Dupont est remplacé par le format personnalisé: Gilles Du."
+
+#: inc/multiple-settings.php:586
+msgid "Enable responsive tables:"
+msgstr "Activer  les tables responsives:"
+
+#: inc/multiple-settings.php:588
+msgid "For a screen resolution < 767px the left column is fixed and the rest of the columns can scroll."
+msgstr "Pour une résolution écran < 767px la colonne de gauche est fixe et le reste des colonnes peuvent défiler."
+
+#: inc/multiple-settings.php:400 inc/multiple-settings.php:407
+msgid "You can customize the texts below in the language of your choice, avoiding the quotation marks \""
+msgstr "Vous pouvez personnaliser les textes ci-dessous dans la langue de votre choix, en évitant les caractères guillemets \""
+
+#: inc/multiple-settings.php:620
+msgid "• To have this alternative view in a style consistent with the photo above activate the option below"
+msgstr "• Pour avoir cette vue alternative dans un style conforme a la photo ci-dessus activer l'option ci-dessous"
+
+#: inc/multiple-settings.php:622
+msgid "• You must also in the previous section have made the choice for the options:"
+msgstr "• Vous devez aussi dans la section précédente avoir fait le choix pour les options:"
+
+#: inc/multiple-settings.php:624
+msgid "Enable custom style for photo view --> no"
+msgstr "Activer style personnalisé pour la vue photo --> non"
+
+#: inc/multiple-settings.php:626
+msgid "Move event date inside photo --> no"
+msgstr "Déplacer la date de l'événement à l'intérieur de la photo --> non"
+
+#: inc/multiple-settings.php:628
+msgid "• On the other hand you can in the previous section activate the options: Name of the place & City of the event + the number of attendees + Tag category."
+msgstr "• Par contre vous pouvez dans la section précédente activer les options: Nom du lieu & Ville de l'évènement + le nombre de participants + Balise catégorie."
+
+#: inc/multiple-settings.php:617
+msgid "• To have this tooltip view in a style consistent with the photo opposite, activate the option below."
+msgstr "• Pour avoir cette vue info-bulle dans un style cohérent avec la photo ci-contre, activez l'option ci-dessous."
+
+#: inc/multiple-settings.php:619
+msgid "This allows you to add in the tooltip of the month view the Name of the place & the City of the event, the number of places remaining."
+msgstr "Cela permet d'ajouter dans l'info-bulle de la vue mois  le Nom du lieu &  la Ville de l'évènement, le nombre de places restantes."
+
+#: inc/multiple-settings.php:694
+msgid "• The extension adds a Duplicate Event link for actions on the screen that lists events."
+msgstr "• L'extension ajoute un lien Dupliquer Évènement pour les actions de l'écran qui liste les évènements."
+
+#: inc/multiple-settings.php:696
+msgid "• By clicking on the Quick Edit link you can enter the new start and end dates for your duplicate event."
+msgstr "• En cliquant sur le lien Modification Rapide vous pouvez saisir  les nouvelles date de début et de fin pour votre évènement dupliqué."
+
+#: inc/multiple-settings.php:698
+msgid "If there is a ticket, this has the advantage of also modifying the start & end date of a ticket, in correlation with the new date of the event."
+msgstr "Si présence d'un ticket, cela a l'avantage de modifier également la date de début & de fin d'un ticket,en corrélation avec la nouvelle date de l'évènement."
+
+#: inc/multiple-settings.php:700
+msgid "• So by remaining on the screen which lists the events you can easily duplicate your events which must be recurring and have an operational ticket for these events."
+msgstr "• Ainsi en restant sur l'écran qui liste les évènements vous pouvez dupliquer facilement vos évènements qui doivent être récurrent et avoir pour ces évènements un ticket opérationnel."
+
+#: inc/multiple-settings.php:704
+msgid "• You must first select in the settings parameters of The Events Calendar extension in the Display tab / Date & Time section:"
+msgstr "• Il faut au préalable dans les paramètres de réglages de l'extension The Events Calendar  sélectionner dans l'onglet Affichage/section Date & Time:"
+
+#: inc/multiple-settings.php:706
+msgid "- Date format with year: d/m/Y"
+msgstr "- Format date avec année: d/m/Y"
+
+#: inc/multiple-settings.php:708
+msgid "- Compact date format: 15/1/2024"
+msgstr "- Format de date compact: 15/1/2024"
+
+#: inc/multiple-settings.php:715
+msgid "NOTICED:"
+msgstr "REMARQUE:"
+
+#: inc/multiple-settings.php:717
+msgid "If a paid ticket or RSVP is present in the duplicated event it is deleted because it remains linked to the event that was duplicated."
+msgstr "Si un ticket payant ou RSVP est présent dans l'évènement dupliqué il est  supprimé car il reste lié a l'évènement que l'on a dupliqué."
+
+#: inc/multiple-settings.php:719
+msgid "A new ticket block is created using the parameters of the original ticket block (capacity, title, description, price, etc...)."
+msgstr "Un nouveau bloc ticket est crée en reprenant les paramètres du bloc ticket original(capacité, titre,description,prix etc...)."
+
+#: inc/multiple-settings.php:411 inc/multiple-settings.php:414
+#: inc/multiple-settings.php:435 inc/multiple-settings.php:438
+msgid "no"
+msgstr "non"
+
+#: inc/multiple-settings.php:419 inc/multiple-settings.php:443
+msgid "yes"
+msgstr "oui"
+
+#: inc/multiple-settings.php:516 inc/multiple-settings.php:544
+#: inc/multiple-settings.php:591 inc/multiple-settings.php:633
+msgid "Choose an option"
+msgstr "sélectionner une option"
+
+#: easy-custom-event-tickets.php:5
+msgid "Custom block Event Tickets RSVP, add participants list"
+msgstr "Personnaliser le block Event Ticket RSVP, Ajouter la liste des participants"
+
+#: easy-custom-event-tickets.php:440
+msgid "Settings"
+msgstr "Réglages"
+
+#: easy-custom-event-tickets.php:364 easy-custom-event-tickets.php:595
+msgid "List of participants"
+msgstr "Liste des participants"
+
+#: easy-custom-event-tickets.php:515 easy-custom-event-tickets.php:815
+msgid "Attendees number: "
+msgstr "Nombre de participants: "
+
+#: easy-custom-event-tickets.php:1256
+msgid "select a category"
+msgstr "sélectionner une catégorie"
+
+#: easy-custom-event-tickets.php:1258
+msgid "All"
+msgstr "Toutes les catégories"
+
+#: easy-custom-event-tickets.php:509
+msgid "BOOKING"
+msgstr "RÉSERVER"
+
+#: easy-custom-event-tickets.php:514
+msgid "Booking"
+msgstr "Réservations"
+
+#: easy-custom-event-tickets.php:524
+msgid "Please submit your BOOKING information, including the total number of guests."
+msgstr "Veuillez renseigner vos informations de réservation, incluant le nombre de participants."
+
+#: easy-custom-event-tickets.php:519
+msgid "BOOKING CLOSED"
+msgstr "RÉSERVATION CLÔTURÉ"
+
+#: easy-custom-event-tickets.php:824 easy-custom-event-tickets.php:884
+msgid "number of participants:"
+msgstr "nombre de participants:"
+
+#: easy-custom-event-tickets.php:825 easy-custom-event-tickets.php:885
+msgid "remaining tickets:"
+msgstr "billets restants:"
+
+# Traduction Duplication évènement
+# #########################################################
+#: inc/ecet-duplicate-tec-event.php:68
+msgid "Duplicate Event"
+msgstr "Dupliquer Évènement"
+
+#: inc/ecet-duplicate-tec-event.php:48
+msgid "You need to install the plugin "
+msgstr "Vous devez installer le plugin "
+
+#: inc/ecet-duplicate-tec-event.php:48
+msgid " before enabling the Easy Custom Event Tickets plugin!"
+msgstr " avant d’activer le plugin Easy Custom Event Tickets!"
+
+# Traduction Edition Rapide
+# #########################################################
+#: inc/ecet-quick-edit.php ecet-quick-edit.php
+msgid "start date"
+msgstr "date début"
+
+#: ecet-quick-edit.php
+msgid "end date"
+msgstr "date de fin"
+
+# Traduction Personnalisation des modèles The Events Calendar
+# #########################################################
+#: tribe-customizations/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip/description.php:38
+msgid " remaining seats"
+msgstr " places restantes"

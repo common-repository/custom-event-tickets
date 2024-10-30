@@ -1,0 +1,268 @@
+
+/************************************************************
+*
+*  Easy Custom Event Tickets [REV:2.1.1] 
+*
+*  1.  STYLE BACK OFFICE PLUGIN
+*  2.  Table des Matières
+*  3.  Scroll avec des ancres de navigation sous une page Gutenberg
+*  4.  Bouton retour vers le haut  
+*  5.  ÉCRAN PAGE & ARTICLE & CPT & MODIFICATION RAPIDE
+* 
+************************************************************/
+
+
+/*----------------------------------------------------------------------------------------
+		                STYLE BACK OFFICE PLUGIN
+/*---------------------------------------------------------------------------------------*/
+
+
+	
+/* Style Page de réglages du plugin */
+
+
+/* titre H1 des pages de réglages du plugin */
+.toplevel_page_ecet_settings_page h1{
+		  
+		font-size:26px;
+		font-weight:600;
+		
+}
+	  
+
+/* titre des sections */ 
+.toplevel_page_ecet_settings_page h2{
+		  
+		color: #135E96!important;
+		font-weight:700;
+		font-size:1.5em;
+		
+}
+
+	  
+/* titre H3 des pages de réglages du plugin */
+/* régle css avec avec WordPress en langue anglaise(3 classes) puis en langue française (2 classes) */
+.toplevel_page_ecet_settings_page h3 { 
+		  
+		font-size: 1.3em;
+		
+}
+	
+	
+.souligne-texte {
+	
+	background: linear-gradient(180deg,transparent 75%,rgba(25,133,255,0.3) 0);
+	
+}
+
+
+/* pour les textes d'intro des Pages */
+.bloc-intro {
+	
+    background-color: rgba(143, 182, 63, 0.51);
+    border-left: 4px solid rgba(143, 182, 63, 0.3);
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+	font-size:16px;
+	width:62%;
+	
+}
+
+/* pour les textes d'intro des sections */
+.mise-en-avant {
+	
+	 border-left: 4px solid rgba(243,112,32,0.7);
+	 background-color:rgba(243,230,114,0.7)!important;
+	 border-radius:4px;
+	 padding:1.1em;
+	 margin:1.1em;
+	 font-size: 14px;
+	 width:50%;
+	 
+}
+
+/* effet ombré inférieur pour les tables qui contiennent les sections de réglages */
+/* régle css avec avec WordPress en langue anglaise(3 classes) puis en langue française (2 classes) */
+.toplevel_page_ecet_settings_page table { 
+
+	box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+	
+}
+
+
+/*-----------------------------------------------------------------------
+		                  Table des Matières            
+------------------------------------------------------------------------*/
+
+/* pour la table des matières*/
+.table-of-content {
+	
+    background-color: rgba(143, 182, 63, 0.51);
+    border-left: 4px solid rgba(143, 182, 63, 0.3);
+    border-radius: 4px;
+    padding: 20px 10px 20px 10px;
+	margin-top:20px;
+	margin-bottom:30px;
+	font-size:16px;
+	line-height: 1.5em;
+	overflow:auto;
+}
+
+.table-of-content #block-left {
+	float: left;
+	width: 48%;
+	border-right: 4px solid rgba(143, 182, 63, 0.3);
+	
+}
+
+/* Rappel: La propriété overflow spécifie s'il faut découper le contenu 
+   ou ajouter des barres de défilement lorsque le contenu d'un élément est trop grand 
+   pour tenir dans la zone spécifiée.
+    overflow:auto similaire à overflow:scroll, mais il ajoute des barres de défilement 
+	uniquement lorsque cela est nécessaire.
+*/
+.table-of-content #block-right {
+	text-align: left;
+	overflow:auto;
+	margin-left: 49%;/* pour laisser une marge par rapport à la bordure droite du bloc de gauche */
+ }
+ 
+ 
+.table-of-content strong {
+    font-weight: 700;
+}
+/* on supprime le soulignement des liens de la table des matières */
+.table-of-content a{ 
+	text-decoration:none;
+	font-weight: 500;
+	margin-left:10px;
+	line-height: 1.8em;
+	color: #2271b1;
+}  
+  
+/* On souligne les Liens de la table des matières au survol avec un dégradé de bleu */
+.table-of-content a:hover{
+	background: linear-gradient(180deg,transparent 75%,rgba(25,133,255,0.3) 0);
+}
+
+/* identation pour les sous titre H3 d'une section */
+.table-of-content a.sub-title{ 
+	margin-left:1.5em;
+	color: #3C434A;
+	font-weight:400;
+}
+
+/* Règles Pour les mobiles en mode portrait*/ 
+@media only screen and (max-width:480px){
+	
+	.table-of-content { 
+		width:100%; 
+	}
+	
+	
+	.table-of-content #block-left {
+		display:block;
+		width: 100%;
+		border-right:none;
+	}
+	
+	.table-of-content #block-right {
+		display:block;
+		width: 100%;
+		margin-left:0;
+	}
+	
+}
+
+
+/*-----------------------------------------------------------------------
+		Scroll avec des ancres de navigation sous une page Gutenberg            
+------------------------------------------------------------------------*/
+	
+	/*La propriété scroll-behavior permet d’activer le smooth scrolling dans votre page 
+	sans utiliser Javascript. La propriété scroll-margin-top, 
+	appliquée au titre, permet de laisser un peu d’espace lorsque le scroll est terminé : 
+	au lieu que le titre soit collé tout en haut de l’écran, il y aura 100px d’espace */
+
+	html {
+	  scroll-behavior: smooth;
+	}
+
+	p, div, h2  {
+	  scroll-margin-top: 100px;
+	}
+	
+	h3, h4 {
+	  scroll-margin-top: 55px;
+	}
+	
+/*-----------------------------------------------------------------------
+		Bouton retour vers le haut            
+------------------------------------------------------------------------*/
+
+.scroll-top {
+
+  background-color: #2271B1;/* couleur par défaut bouton WordPress */
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none; /* évite le soulignement bouton actif */
+  border-radius: 4px;
+  position: fixed;/*La position fixe permet toujours à notre bouton de rester au même endroit lorsque nous faisons défiler la page*/
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;/*z-index d'un nombre très élevé fait en sorte que le bouton chevauche toujours d'autres éléments du site*/
+  opacity:0.5;
+  
+}
+
+.scroll-top:hover {
+  cursor: pointer;
+  opacity:0.7;
+}
+
+.scroll-top:active {
+  opacity:1;
+}
+
+
+.scroll-top:after {
+  content: "\f343";
+  font-family: 'dashicons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 40px;/* on ajuste la hauteur de la ligne a celle du container pour un centrage vertical de l'icône */
+  color: #FFFFFF;
+}
+
+
+
+/*-----------------------------------------------------------------------
+      ÉCRAN PAGE & ARTICLE & CPT & MODIFICATION RAPIDE      
+------------------------------------------------------------------------*/
+
+/* ----- Style Page & Article & CPT --------------*/
+body.wp-admin th#title{width:300px;}
+th#author{width:120px;}
+th#page_post_id{width:50px;}
+th#categories{width:120px;}
+th#tags{width:100px;}
+body.wp-admin th#date{width:95px;}
+th#page_post_views{width:60px;}
+th#tickets{width:100px;}/* The Events Calendar */
+th#events-cats{width:190px;}/* The Events Calendar */
+body.post-type-tribe_events th#start-date{width:120px!important;} 
+body.post-type-tribe_events th#end-date{width:100px;} 
+
+
+/* ----- Style Modification Rapide pour l'édition des dates évènements ---*/
+ #wpbody-content #tribe-event-new-date .title{font-weight: 600;}
+ #wpbody-content #tribe-event-new-date{margin:15px 0px;}
+
+/* ---- Style The Events Calendar ------------------*/
+th#series{width:170px;}
+th#start_date{width:130px;}
+th#events{width:80px;}

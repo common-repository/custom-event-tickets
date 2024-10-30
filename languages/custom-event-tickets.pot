@@ -1,0 +1,237 @@
+# Copyright (C) 2021 Rouergue Creation
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Custom Event Tickets 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-event/"
+"ntickets\n"
+"POT-Creation-Date: 2021-03-15 15:48+0100\n"
+"PO-Revision-Date: 2021-03-13 16:31+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+
+#: inc/admin-menu.php:22
+msgid "Easy Custom Event Tickets Settings"
+msgstr ""
+
+#: inc/admin-menu.php:23
+msgid "ECET Settings"
+msgstr ""
+
+#: inc/admin-menu.php:81
+msgid "Save Settings"
+msgstr ""
+
+#: inc/multiple-settings.php:41
+msgid "Default settings"
+msgstr ""
+
+#: inc/multiple-settings.php:50
+msgid "initialize the plugin with default settings"
+msgstr ""
+
+#: inc/multiple-settings.php:59
+msgid "delete data during uninstallation?"
+msgstr ""
+
+#: inc/multiple-settings.php:95
+msgid "Participants table"
+msgstr ""
+
+#: inc/multiple-settings.php:105
+msgid "Table title"
+msgstr ""
+
+#: inc/multiple-settings.php:115
+msgid "HTML title tag"
+msgstr ""
+
+#: inc/multiple-settings.php:121
+msgid "h2"
+msgstr ""
+
+#: inc/multiple-settings.php:122
+msgid "h3"
+msgstr ""
+
+#: inc/multiple-settings.php:123
+msgid "h4"
+msgstr ""
+
+#: inc/multiple-settings.php:124
+msgid "h5"
+msgstr ""
+
+#: inc/multiple-settings.php:125
+msgid "p"
+msgstr ""
+
+#: inc/multiple-settings.php:134
+msgid "select the number of columns"
+msgstr ""
+
+#: inc/multiple-settings.php:140 inc/multiple-settings.php:184
+msgid "3"
+msgstr ""
+
+#: inc/multiple-settings.php:141 inc/multiple-settings.php:185
+msgid "4"
+msgstr ""
+
+#: inc/multiple-settings.php:142
+msgid "5"
+msgstr ""
+
+#: inc/multiple-settings.php:143
+msgid "6"
+msgstr ""
+
+#: inc/multiple-settings.php:144
+msgid "7"
+msgstr ""
+
+#: inc/multiple-settings.php:145
+msgid "8"
+msgstr ""
+
+#: inc/multiple-settings.php:157
+msgid "Participants table style"
+msgstr ""
+
+#: inc/multiple-settings.php:166
+msgid "even line background color"
+msgstr ""
+
+#: inc/multiple-settings.php:176
+msgid "border thickness in pixel"
+msgstr ""
+
+#: inc/multiple-settings.php:182
+msgid "1"
+msgstr ""
+
+#: inc/multiple-settings.php:183
+msgid "2"
+msgstr ""
+
+#: inc/multiple-settings.php:194
+msgid "color border"
+msgstr ""
+
+#: inc/multiple-settings.php:204
+msgid "font size in pixel"
+msgstr ""
+
+#: inc/multiple-settings.php:210
+msgid "15"
+msgstr ""
+
+#: inc/multiple-settings.php:211
+msgid "16"
+msgstr ""
+
+#: inc/multiple-settings.php:212
+msgid "17"
+msgstr ""
+
+#: inc/multiple-settings.php:213
+msgid "18"
+msgstr ""
+
+#: inc/multiple-settings.php:214
+msgid "19"
+msgstr ""
+
+#: inc/multiple-settings.php:215
+msgid "20"
+msgstr ""
+
+#: inc/multiple-settings.php:224
+msgid "font color"
+msgstr ""
+
+#: inc/multiple-settings.php:237
+msgid "RSVP Gutenberg block style"
+msgstr ""
+
+#: inc/multiple-settings.php:246
+msgid "button text"
+msgstr ""
+
+#: inc/multiple-settings.php:256
+msgid "text below number of participants"
+msgstr ""
+
+#: inc/multiple-settings.php:266
+msgid "text displayed for a closed reservation"
+msgstr ""
+
+#: inc/multiple-settings.php:276
+msgid "text displayed in introduction reservation form"
+msgstr ""
+
+#: inc/multiple-settings.php:290
+msgid "Custom the events calendar list view"
+msgstr ""
+
+#: inc/multiple-settings.php:299
+msgid "text displayed as a prefix of the number of participants"
+msgstr ""
+
+#: inc/multiple-settings.php:309
+msgid "text displayed as a prefix of the number of tickets remaining"
+msgstr ""
+
+#: inc/multiple-settings.php:384 inc/multiple-settings.php:391
+msgid "You can customize the texts below in the language of your choice, avoiding the quotation marks."
+msgstr ""
+
+#: inc/multiple-settings.php:411 inc/multiple-settings.php:414
+#: inc/multiple-settings.php:435 inc/multiple-settings.php:438
+msgid "no"
+msgstr ""
+
+#: inc/multiple-settings.php:419 inc/multiple-settings.php:443
+msgid "yes"
+msgstr ""
+
+#: inc/multiple-settings.php:516 inc/multiple-settings.php:544
+#: inc/multiple-settings.php:591 inc/multiple-settings.php:633
+msgid "Choose an option"
+msgstr ""
+
+#: easy-custom-event-tickets.php:364 easy-custom-event-tickets.php:595
+msgid "List of participants"
+msgstr ""
+
+#: easy-custom-event-tickets.php:509
+msgid "BOOKING"
+msgstr ""
+
+#: easy-custom-event-tickets.php:514 
+msgid "Booking"
+msgstr ""
+
+#: easy-custom-event-tickets.php:524
+msgid "Please submit your BOOKING information, including the total number of guests."
+msgstr ""
+
+#: easy-custom-event-tickets.php:519
+msgid "BOOKING CLOSED"
+msgstr ""
+
+#: easy-custom-event-tickets.php:824 easy-custom-event-tickets.php:884
+msgid "number of participants:"
+msgstr ""
+
+#: easy-custom-event-tickets.php:825 easy-custom-event-tickets.php:885
+msgid "remaining tickets:"
+msgstr ""
+

@@ -1,0 +1,426 @@
+/************************************************************
+*
+*  Easy Custom Event Tickets [REV:2.1.1] 
+*
+*  Fichier de style pour la version Free des extensions The Event Calendar & Event Tickets
+*
+*  1. Bloc Gutenberg RSVP en langue anglaise sur la page de détail de l'évènement
+*  2. Table des participants à l'évènement
+*  3. Calendrier des évènements pour la vue mois
+*  4. Calendrier des évènements pour la vue Liste
+*  5. Balise catégories pour la vue Liste & Photo
+*  6. Contrôle select pour filtre catégories dans la barre de recherche
+*  7. Page Paiement des billets
+* 
+************************************************************/
+
+
+
+
+/* -------------------------- 1. Bloc Gutenberg RSVP en langue anglaise sur la page de détail de l'évènement -------------------------*/
+
+/*  texte originel modifié
+   GOING ==> PARTICIPE
+	Please submit your RSVP information, including the total number of guests. 
+	==> Veuillez soumettre vos informations RSVP, y compris le nombre total de personnes.
+*/
+
+/* On masque le texte au dessus du bouton: RSVP Ici */
+.tribe-tickets__rsvp-actions-rsvp span {
+	display:none;
+}
+
+
+/* on Réduit la ligne texte d'origine du bouton GOING et on la place a l'arrière plan*/ 
+.event-tickets .tribe-tickets__rsvp-actions .tribe-common-c-btn {
+	text-indent: -9999px; 
+	line-height: 0; 
+	max-width:130px!important;
+} 
+
+
+/* On remplace le titre du bouton GOING par BOOKING 
+   Le nouveau Texte:BOOKING occupe la hauteur de ligne d'origine
+*/
+.event-tickets .tribe-tickets__rsvp-actions .tribe-common-c-btn:after { 
+	content: "BOOKING"; 
+	text-indent: 0; 
+	display: block; 
+	line-height: initial;
+} 
+ 
+
+
+/* pour le nbr de participant, on Réduit la ligne texte d'origine: going et on la place a l'arrière plan*/ 
+.event-tickets .tribe-tickets__rsvp-attendance-going {
+	text-indent: -9999px; 
+	line-height: 0;
+} 
+	
+/* On remplace le texte Going par Booking */
+/* Le nouveau Texte:Booking occupe la hauteur de ligne d'origine  */
+.event-tickets .tribe-tickets__rsvp-attendance-going:after { 
+	content: "Booking"; 
+	text-indent: 0; 
+	display: block; 
+	line-height: initial;
+}
+
+/* on réduit la marge entre le nbr de réservation et le texte going */
+.event-tickets .tribe-tickets__rsvp-attendance-number {
+	margin-bottom:-15px;
+}
+
+
+
+/* pour le formulaire de réservation on Réduit la texte d'intro d'origine et on la place a l'arrière plan  */
+.event-tickets .tribe-tickets__rsvp-form-title h3 {
+	text-indent: -9999px; 
+	line-height: 0;
+}
+	
+
+/* On remplace le texte en intro du formulaire de Réservation */
+/* Le nouveau Texte occupe la hauteur de ligne d'origine */
+.event-tickets .tribe-tickets__rsvp-form-title h3:after {
+	content: "Please submit your BOOKING information, including the total number of guests.";
+	text-indent: 0; 
+	display: block; 
+	line-height: initial;
+}
+
+
+
+/* on remplace le texte RSVP CLOSED par BOOKING CLOSED */  
+.event-tickets .tribe-tickets__rsvp-actions-full-text {
+	color:transparent!important;
+}
+.event-tickets .tribe-tickets__rsvp-actions-full-text:after {
+	content: "BOOKING CLOSED";
+	color: #5d5d5d;
+	text-align:center;
+}
+
+
+/* Bouton PARTICIPE */
+body.single-tribe_events .event-tickets .tribe-tickets__rsvp-actions .tribe-common-c-btn {
+    max-width: 130px!important;
+}
+
+
+/* on réduit les marges interne du container pour le texte: BOOKING CLOSED  */
+@media (min-width: 768px){
+	.event-tickets .tribe-tickets__rsvp-actions-full {
+		padding: 0 20px 0 20px!important;
+	}
+}
+
+/* -------------------------- 2. Table des participants à l'évènement -------------------------*/
+
+/* marge ticket RSVP ou billets payants par rapport a la table des participants  */
+.tribe-common.event-tickets , .tribe-common.tribe-tickets {
+	margin-bottom:40px;
+}
+
+.table-participant{
+	margin-bottom:40px;
+	margin-top:10px;
+}
+
+/* On affiche dans une table les participants à l'évènement */ 
+.table-participant td {
+border-style: solid;
+/* border-width: 1px  ;
+   border-color:#e4e4e4; */
+padding: 5px;
+vertical-align:middle;
+text-align: center;
+}
+
+
+/* couleur de fond pour les lignes paire de la table 
+.table-participant tbody > tr:nth-child(2n) td {
+    background: #EFF8FE;
+}*/
+
+
+/* -------------------------- 3. Calendrier des évènements pour la vue mois -------------------------*/
+ 
+ /* 
+	régles pour l'info-bulle du modèle personnalisé
+	Nom du Lieu + Ville de l'évènement
+ */
+ .ecet-tooltip-venue-details.tribe-common-b3{
+	 margin-top:-5px;
+	 margin-bottom:5px;
+ }
+ 
+ 
+ /* couleur arrière plan Conteneur évènement (balise <article> dans la cellule de la vue mois)	
+body.post-type-archive-tribe_events .tribe-events .tribe-events-calendar-month__calendar-event{
+	background-color:#F20000;
+}
+*/
+
+/* couleur icône pour la vue mobile 
+body.post-type-archive-tribe_events .tribe-events .tribe-events-calendar-month__mobile-events-icon--event{
+	background-color: #F20000;
+}
+*/
+
+/* Date & Titre de l'évènement	
+body.post-type-archive-tribe_events .tribe-events .tribe-events-calendar-month__calendar-event-datetime,
+body.post-type-archive-tribe_events .tribe-events .tribe-events-calendar-month__calendar-event-title a {
+  color: yellow;	
+}
+ */
+
+
+/* -------------------------- 4. Calendrier des évènements pour la vue Liste -------------------------*/
+	
+	/* centrer la photo verticalement */
+	.tribe-events-calendar-list__event-featured-image-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+
+
+/* -------------------------- 5. Calendrier des évènements pour la vue photo -------------------------*/
+
+/* 
+	Régles CSS pour la vue photo avec un modèle personnalisé 
+	afin d'afficher la date de l'évènement dans la photo
+*/
+
+/* Lien de l'image */
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-link {
+  position: relative;
+}
+ 
+ /* container pricipal de la date & du mois */
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 4px;
+}
+
+/* container de la date */ 
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag-datetime {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* taille de la date */
+body.post-type-archive-tribe_events .tribe-events-pro  .tribe-events-pro-photo__event-featured-image-date-tag-daynum {
+    font-size: var(--tec-font-size-5);
+}
+ 
+ /* container du mois */
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag-month {
+  color: #141827;
+  font-family: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #727272;
+  text-transform: uppercase;
+  margin-bottom: calc(var(--tec-spacer-0)*-1);/* */
+}
+
+/* détail de l'évènement */
+.tribe-events-pro .tribe-events-pro-photo__event-details {
+    margin-top: 0;
+    padding: 5px;
+}
+
+
+
+/* --------------------------  Balise catégories pour la vue Liste & Photo -------------------------*/
+
+.tribe-events-calendar-list .tribe-event-categories li,
+.tribe-events-pro-photo .tribe-event-categories li {
+  display: inline;
+  border: 2px solid #334aff;
+  background-color: #334aff;
+  padding: 3px 9px;
+  border-radius: 30px;
+  margin-right: 3px;
+  font-size: 0.8em;
+}
+
+.tribe-events-calendar-list .tribe-event-categories li:hover,
+.tribe-events-pro-photo .tribe-event-categories li:hover  {
+  background-color: #FFFFFF!important;
+}
+
+.tribe-events-calendar-list .tribe-event-categories li a,
+.tribe-events-pro-photo .tribe-event-categories li a {
+  color: #FFFFFF!important;
+  font-weight:700;
+}
+
+.tribe-events-calendar-list .tribe-event-categories li:hover a,
+.tribe-events-pro-photo .tribe-event-categories li:hover a {
+  color: #334aff!Important;
+}
+
+
+/* -----------------Contrôle select pour filtre catégories dans la barre de recherche -------------------------*/
+
+.tribe-events-c-events-bar__search-container .ecet_select_event_categories{
+	margin-left:20px;
+	width:280px;
+}
+
+/* pour les mobiles et tablettes en mode portrait */
+@media (max-width:766px) {
+	.tribe-events-c-events-bar__search-container .ecet_select_event_categories{
+		display:block;
+		margin:10px auto;
+		
+	}
+}
+
+/* ============ Page Paiement des billets ========== */
+
+/************** Paiement Pay Pal ******************/
+	
+/*---- traduction: Purchaser info -----*/
+.tribe-tickets__form h4{
+font-size:0!important;
+}
+
+.tribe-tickets__form h4::after{
+	content:"Information acheteur";
+	font-size: var(--tec-font-size-4);
+}
+
+/*---- traduction: Person purchasing tickets:---- */
+.tribe-tickets__form label.tribe-tickets__commerce-checkout-purchaser-info-name-field-label{
+	font-size:0!important;
+}
+
+.tribe-tickets__form label.tribe-tickets__commerce-checkout-purchaser-info-name-field-label::after{
+	content:"Nom :";
+	font-size: 14px;
+	font-weight: var(--tec-font-weight-regular);
+}
+
+
+/************** Paiement Stripe ******************/
+
+
+/*---- traduction: More Info:---- */
+.tribe-tickets__commerce-checkout-cart-item-details-button--more 
+.tribe-tickets__commerce-checkout-cart-item-details-button-text{
+	font-size:0!important;
+}
+
+.tribe-tickets__commerce-checkout-cart-item-details-button--more 
+.tribe-tickets__commerce-checkout-cart-item-details-button-text::before{
+	content:"Plus d'informations";
+	font-size: var(--tec-font-size-1);
+	color:var(--tec-color-text-primary-light);
+	line-height: var(--tec-line-height-0);
+}
+
+
+.tribe-tickets__commerce-checkout-cart-item-details-button--more:after{
+	margin-left:2px!important;
+}
+
+
+/*---- traduction: Quantity: ---- */
+.tribe-tickets__commerce-checkout-cart-footer-quantity 
+.tribe-tickets__commerce-checkout-cart-footer-quantity-label {
+	font-size:0!important;
+}
+
+
+.tribe-tickets__commerce-checkout-cart-footer-quantity 
+.tribe-tickets__commerce-checkout-cart-footer-quantity-label:after {
+	content:"Quantité: ";
+	font-size:var(--tec-font-size-3);
+	color:var(--tec-color-text-primary-light);
+	line-height: var(--tec-line-height-3);
+}
+
+
+/* ============ Page Commande Reçue ========== */
+
+/*---- traduction: Order number -----*/
+.tribe-tickets__commerce-order .tribe-tickets__commerce-order-details-row:first-child .tribe-tickets__commerce-order-details-col1 {
+	font-size:0!important;
+}
+
+.tribe-tickets__commerce-order .tribe-tickets__commerce-order-details-row:first-child .tribe-tickets__commerce-order-details-col1::after{
+	content:"Numéro commande";
+	font-size: var(--tec-font-size-3);
+	line-height: var(--tec-line-height-3);
+}
+
+/*---- traduction: Payment method -----*/
+.tribe-tickets__commerce-order .tribe-tickets__commerce-order-details-row:last-child .tribe-tickets__commerce-order-details-col1 {
+	font-size:0!important;
+}
+
+.tribe-tickets__commerce-order .tribe-tickets__commerce-order-details-row:last-child .tribe-tickets__commerce-order-details-col1::after{
+	content:"Mode de paiement";
+	font-size: var(--tec-font-size-3);
+	line-height: var(--tec-line-height-3);
+}
+
+
+/*---- traduction: Your Billets -----*/
+.tribe-tickets__commerce-order h4.tribe-common-h--alt {
+	font-size:0!important;
+}
+
+.tribe-tickets__commerce-order h4.tribe-common-h--alt::after{
+	content:"Vos billets";
+	font-size: var(--tec-font-size-7);
+	line-height: var(--tec-line-height-1);
+}
+
+/* --------------------------  Calendrier des évènements pro pour la vue photo -------------------------*/
+
+
+/* Marge basse de la photo par rapport au descriptif 
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-wrapper {
+	margin-bottom:0!important;
+	box-shadow:0px 0px 4px 1px rgba(0,0,0,0.2);
+	border-radius: 10px 10px 0px 0px;
+}
+*/ 
+
+/* border radius pour l'image 
+.tribe-events-pro .tribe-events-pro-photo__event-featured-image-wrapper img {
+	border-radius: 10px 10px 0px 0px;
+}
+*/
+
+/* descriptif sous la photo 
+.tribe-events-pro .tribe-events-pro-photo__event-details-wrapper{
+	background:#FFFFFF;
+	box-shadow:0px 0px 4px 1px rgba(0,0,0,0.2);
+	padding: 5px;
+	border-radius: 0px 0px 10px 10px;
+}
+*/
+
+/* Décalage vertical vers le haut au survol de l'évènement  
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-g-row--gutters>.tribe-common-g-col:hover{
+	transform: translateY(-6px) translateX(-1px);
+	transition: transform 0.3s ease-in-out;
+}
+
+*/
+
